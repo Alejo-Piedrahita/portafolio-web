@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Web | Jhon Alejandro Piedrahita Bonilla</title>
+    <meta name="description"
+        content="Portafolio personal de Jhon Alejandro Piedrahita Bonilla, estudiante de ingeniería informática.">
+    <meta name="author" content="Jhon Alejandro Piedrahita Bonilla">
+
+    <!-- Open Graph para cuando comparta el enlace en redes -->
+    <meta property="og:title" content="Portafolio Web | Jhon Alejandro Piedrahita Bonilla">
+    <meta property="og:description" content="Proyectos y habilidades en desarrollo web.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tu-usuario.github.io/tu-repositorio/">
+    <meta property="og:image" content="https://tu-usuario.github.io/tu-repositorio/preview.jpg">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- TODO: enlazar styles.css cuando esté listo -->
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <header>
+        <h1>Jhon Alejandro Piedrahita Bonilla - Desarrollador Web</h1>
+
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Sobre mí -->
+        <section id="sobre-mi" aria-labelledby="titulo-sobre-mi">
+            <h2 id="titulo-sobre-mi">Sobre mí</h2>
+            <p>Estudiante de ingeniería informática. Me interesa el desarrollo web accesible y la semántica del HTML.
+            </p>
+
+            <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Espacio de trabajo con laptop y código en pantalla" width="400">
+        </section>
+
+        <!-- Proyectos -->
+        <section id="proyectos" aria-labelledby="titulo-proyectos">
+            <h2 id="titulo-proyectos">Mis Proyectos</h2>
+
+            <article>
+                <h3>Sistema Legal Educativo</h3>
+                <p>App de escritorio en Java para consultas jurídicas asistidas por IA en el ámbito educativo.</p>
+                <a href="https://github.com/Alejo-Piedrahita/SistemaLegalEducativo.git">Ver en GitHub</a>
+            </article>
+
+            <article>
+                <h3>Sistema de Gestión de Inventario</h3>
+                <p>Aplicación de escritorio en Java para inventario de una empresa unipersonal dedicada a la venta de pantallas para celular. (Aún no
+                    publicado en GitHub)</p>
+                <a href="#">Repositorio no disponible</a>
+            </article>
+
+            <article>
+                <h3>Proyecto Final - Bootcamp</h3>
+                <p>Sistema para consultar consumo de energía en gráficas. Está en una cuenta alterna de GitHub.</p>
+                <a href="https://github.com/JhonAlejandroPiedrahitaBonilla/Proyecto_Final.git">Ver en GitHub</a>
+            </article>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" aria-labelledby="titulo-contacto">
+            <h2 id="titulo-contacto">Contacto</h2>
+            <p>Escríbeme si quieres colaborar en algo.</p>
+
+            <!-- Formulario con validación nativa -->
+            <form action="#" method="POST">
+                <div>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej. Pepito Pérez">
+                </div>
+
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com">
+                </div>
+
+                <div>
+                    <label for="telefono">Teléfono (opcional):</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="3001234567"
+                        title="Ingresa 10 dígitos numéricos">
+                </div>
+
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required
+                        placeholder="Escribe tu mensaje..."></textarea>
+                </div>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+
+            <hr>
+
+            <!-- Video de presentación (URL de prueba, el poster es genérico) -->
+            <h3>Video de presentación</h3>
+            <video controls width="400"
+                poster="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                <track kind="subtitles" src="subtitulos.vtt" srclang="es" label="Español" default>
+                Tu navegador no soporta video.
+            </video>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" aria-labelledby="titulo-faq">
+            <h2 id="titulo-faq">Preguntas Frecuentes</h2>
+
+            <details>
+                <summary>¿Qué tecnologías usas?</summary>
+                <p>Principalmente Java para escritorio y backend, y HTML/CSS/JS para frontend.</p>
+            </details>
+
+            <details>
+                <summary>¿Estás disponible para freelance?</summary>
+                <p>Sí, mientras continúo con mis estudios.</p>
+            </details>
+        </section>
+
+        <!-- Botón para abrir el modal -->
+        <section id="modal-trigger">
+            <h2>Información extra</h2>
+            <button id="btn-abrir-modal">Ver mensaje importante</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jhon Alejandro Piedrahita Bonilla.</p>
+        <nav aria-label="Enlaces sociales">
+            <ul>
+                <li><a href="https://github.com/Alejo-Piedrahita" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/jhon-alejandro-piedrahita-bonilla-a2374a449" target="_blank"
+                        rel="noopener">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- Modal nativo -->
+    <dialog id="mi-modal">
+        <h2>¡Hola!</h2>
+        <p>Este modal usa la etiqueta <code>&lt;dialog&gt;</code> nativa. Sin librerías. Atrapa el foco del teclado
+            automáticamente.</p>
+        <button id="btn-cerrar-modal">Cerrar</button>
+    </dialog>
+
+    <!-- Template para las tarjetas de habilidades -->
+    <template id="plantilla-habilidad">
+        <style>
+            .tarjeta {
+                border: 2px solid #333;
+                border-radius: 8px;
+                padding: 16px;
+                background-color: #f4f4f4;
+                font-family: sans-serif;
+                margin: 10px 0;
+                box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .titulo {
+                color: #0056b3;
+                margin-top: 0;
+                font-size: 1.2rem;
+            }
+
+            .nivel {
+                font-weight: bold;
+                color: #28a745;
+            }
+        </style>
+        <div class="tarjeta">
+            <h3 class="titulo">
+                <slot name="nombre-habilidad">Habilidad</slot>
+            </h3>
+            <p>Nivel: <span class="nivel">
+                    <slot name="nivel-habilidad">Básico</slot>
+                </span></p>
+        </div>
+    </template>
+
+    <div style="margin-top: 20px;">
+        <h2>Mis Habilidades (Web Components)</h2>
+        <habilidad-card>
+            <span slot="nombre-habilidad">Desarrollo en Java</span>
+            <span slot="nivel-habilidad">Básico</span>
+        </habilidad-card>
+        <habilidad-card>
+            <span slot="nombre-habilidad">HTML5 y Accesibilidad</span>
+            <span slot="nivel-habilidad">Básico</span>
+        </habilidad-card>
+    </div>
+
+    <script>
+        // Modal
+        const modal = document.getElementById('mi-modal');
+        const btnAbrir = document.getElementById('btn-abrir-modal');
+        const btnCerrar = document.getElementById('btn-cerrar-modal');
+
+        btnAbrir.addEventListener('click', () => modal.showModal());
+        btnCerrar.addEventListener('click', () => modal.close());
+
+        // Web Component
+        class HabilidadCard extends HTMLElement {
+            constructor() {
+                super();
+                const shadow = this.attachShadow({ mode: 'open' });
+                const template = document.getElementById('plantilla-habilidad');
+                shadow.appendChild(template.content.cloneNode(true));
+            }
+        }
+        customElements.define('habilidad-card', HabilidadCard);
+    </script>
+</body>
+
+</html>
